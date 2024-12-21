@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Model Selector</title>
+  <style>
+    /* General Reset */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #1a1a1a, #2b2b2b);
+      color: white;
+      background-image: url('homei.jpg'); /* Replace with your image URL */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+    }
+
+    /* Add dark overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+      z-index: 1;
+    }
+
+    /* Container with top-left positioning */
+    .container {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      text-align: left;
+    }
+
+    /* Title */
+    h1 {
+      font-size: 150px;
+      margin-bottom: 0.5rem;
+      color: #e0e0e0;
+      font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    }
+
+    h2 {
+      font-size: 100px; /* Increased font size for "Motorsport" */
+      margin-top: 5px; /* Margin of 5px between "BMW" and "Motorsport" */
+      color: #e0e0e0;
+      font-family: 'Verdana', 'Geneva', 'Tahoma', sans-serif;
+    }
+
+    /* Button Styling */
+    
+
+    /* Styling for each letter in "BMW" */
+    .b { color: lightblue; }
+    .m { color: darkblue; }
+    .w { color: red; }
+    .container-eg-btn-4 {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 10px;
+    padding: .5em;
+    line-height: normal;
+}
+.container-eg-btn-4 .button {
+    background: #af40ff;
+    margin: 15px;
+    padding: 18px 22px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    transition: .3s;
+    z-index: 1;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 700;
+}
+.container-eg-btn-4 .button-1 {
+    background-color: initial;
+}
+.container-eg-btn-4 .button-1:before {
+    border-radius: 12px;
+}
+.container-eg-btn-4 .button-1:after {
+    border-radius: 10px;
+}
+.container-eg-btn-4 .button-1:before {
+    background-color: #7a00ff33;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+}
+.container-eg-btn-4 .button-1:after {
+    background-color: initial;
+    background-image: linear-gradient(45deg, #ff6209 0, #6905d5 100%);
+    bottom: 4px;
+    content: "";
+    display: block;
+    left: 4px;
+    overflow: hidden;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+}
+
+
+.container-eg-btn-4 .button-10 {
+    background-image: linear-gradient(144deg, #AF40FF, #5B42F3 50%, #00DDEB);
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+}
+.container-eg-btn-4 .button-12:hover {
+    background-position: right center;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container-eg-btn-4 .button-12 {
+    background-image: linear-gradient(to right, #16BFFD 0%, #CB3066 51%, #16BFFD 100%);
+    background-size: 200% auto;
+    box-shadow: 0px 6px 16px 0px #8d7bb187;
+}
+.container-eg-btn-4 .button-12:active {
+    -webkit-background-clip: unset;
+    background-clip: unset;
+    -webkit-text-fill-color: unset;
+}
+   
+  </style>
+</head>
+<body>
+        <div class="container">
+          <h1><span class="b">B</span><span class="m">M</span><span class="w">W</span></h1>
+          <h2>Motorsport</h2>
+          <div class="container-eg-btn-4 uf-border">
+            <a class="button button-12" id="choosebut">CHOOSE THE MOTORSPORT</a>
+          </div>
+          <script>
+            document.getElementById("choosebut").addEventListener("click", function () {
+              // Use a relative path to your file
+              window.location.href = "./index.html"; // Update the path as needed
+            });
+          </script>
+        </div>
+      </body>
+      
+
+</html>
